@@ -1,0 +1,104 @@
+1) vs code ga papkani kiriting va uni htmlni jsga ulang.
+
+2)js ga o'tib terminalni ochib oling.
+
+3)terminalga npm init -y yozing va enterni boshing
+
+4)keyin esa package.json sizning papkangizga ochiladi
+
+5)terminalga npm install eslint --save-dev yozing va enterni bosing 
+
+6)papkangizga node_modules degan papka ochiladi
+
+7)terminalga npm init @eslint/config yozing va enterni bosing 
+
+8)chiqadigan savollar javoni shu yerda {
+	1)[
+? How would you like to use ESLint? … 
+  	To check syntax only
+ 	To check syntax and find problems
+	▸ To check syntax, find problems, and enforce code style
+    	]
+	2)[? What type of modules does your project use? … 
+  	JavaScript modules (import/export)
+	▸ CommonJS (require/exports)
+	  None of these]
+	3)[? Which framework does your project use? … 
+  	React
+  	Vue.js
+	▸ None of these
+    	]
+	4)[? Does your project use TypeScript? ‣ (No ni tanlang) / Yes]
+	5)[
+	? Where does your code run?
+ 	Browser
+	✔ Node]
+	6)[? How would you like to define a style for your project?
+	▸   Use a popular style guide
+    	Answer questions about your style]
+	7)[
+	? Which style guide do you want to follow? … 
+   	 Airbnb: https://github.com/airbnb/javascript
+	▸   Standard: https://github.com/standard/standard
+    	Google: https://github.com/google/eslint-config-google
+    	XO: https://github.com/xojs/eslint-config-xo]
+	8)[
+	? What format do you want your config file to be in? 
+	▸   JavaScript
+    	YAML
+    	JSON
+   	 ]
+
+	keyin manabunday javoblar chiqadi:
+√ How would you like to use ESLint? · style
+√ What type of modules does your project use? · commonjs
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · browser
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · standard    
+√ What format do you want your config file to be in? · JavaScript
+Checking peerDependencies of eslint-config-standard@latest
+
+kuting;
+
+	9)[? Would you like to install them now? ‣ No / Yesni bosing]
+	10)[? Which package manager do you want to use? … 
+	▸   npm
+    	yarn
+    	pnpm]
+
+}
+
+9)Installing eslint-config-standard@latest, eslint@^8.0.1, eslint-plugin-import@^2.25.2, eslint-plugin-n@^15.0.0, eslint-plugin-promise@^6.0.0
+manashunaqa yozuv chiqadi kuting npm yuklanadi.
+
+10)keyin package.json fileni oching va 
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+script ichidagi "test" qatorini uchirib uni o'rniga
+
+"lint": "eslint ./"
+    
+ni yozib saqlang.
+
+11)ctrl+shift+p ni bosing va 
+
+Preferences: Open Workspace Settings (JSON) 
+
+yozuvini qidiring va oching.
+
+12)settings.json file ochiladi va uni ichiga(jingalak qavs) 
+
+
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+}
+
+ni yozing va saplang.
+
+
+Barchasi tayyor endi sizni shu faylingizga eslint va auto fix ishlaydi.
